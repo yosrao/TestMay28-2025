@@ -1,2 +1,13 @@
 image:
   file: .devcontainer/Dockerfile
+
+ports:
+  - name: PHP
+    port: 8080
+    onOpen: open-browser # Optional: Open in browser or other options
+  - name: MySQL
+    port: 3306
+    onOpen: ignore # Optional: Ignore, open-preview, or open-browser
+  - name: phpMyAdmin
+    port: 8081
+    onOpen: open-browser # Optional: Open in browser or other options
